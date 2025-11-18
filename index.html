@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ClassNature - 智能课表管理系统，基于.NET 9和WinUI 3构建的现代化桌面应用">
+    <meta name="keywords" content="课表管理,桌面应用,.NET 9,WinUI 3,课表系统,桌面程序">
+    <meta name="author" content="ClassNature Development Team">
+    <title>ClassNature - 智能课表管理系统</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzRmNDZlNSIvPgo8cGF0aCBkPSJNOCAxMkgxNlYyMEg4VjEyWiIgZmlsbD0id2hpdGUiLz4KPHA+dGggZD0iTTggMjBINFYyNEgyMFYyMEg4WiIgZmlsbD0id2hpdGUiLz4KPHN2Zz4K">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ClassNature - 智能课表管理系统">
+    <meta property="og:description" content="基于.NET 9和WinUI 3的现代化桌面应用">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://classnature.github.io">
+    <meta property="og:image" content="https://classnature.github.io/images/og-image.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ClassNature - 智能课表管理系统">
+    <meta name="twitter:description" content="基于.NET 9和WinUI 3的现代化桌面应用">
+    <meta name="twitter:image" content="https://classnature.github.io/images/og-image.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">ClassNature</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#features" class="nav-link">功能特性</a></li>
+                <li><a href="#changelog" class="nav-link">更新日志</a></li>
+                <li><a href="#download" class="nav-link">下载</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <h1 class="fade-in-up">ClassNature</h1>
+                <p class="fade-in-up">智能课表管理系统 - 基于.NET 9和WinUI 3构建的现代化桌面应用</p>
+                <div class="cta-buttons fade-in-up">
+                    <a href="#download" class="btn btn-primary">
+                        <span>🚀</span>
+                        立即下载
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span>📋</span>
+                        了解更多
+                    </a>
+                    <a href="https://github.com/ClassNature" class="btn btn-outline" target="_blank">
+                        <span>📱</span>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Version Codename Section -->
+    <section class="version-codename-section">
+        <div class="container">
+            <div class="version-codename-card reveal">
+                <h2 class="version-codename-title">版本代号：<strong>Aevum</strong></h2>
+                <p class="version-codename-description">
+                    ClassNature 当前开发版本采用"Aevum"作为版本代号，象征着时间与永恒，
+                    体现了我们对于构建永恒、可靠课表管理系统的追求与承诺。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">主要版本</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">新增功能</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Bug修复</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2024">0</div>
+                    <div class="stat-label">开发年份</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">核心功能特性</h2>
+                <p class="section-subtitle reveal">强大的课表管理功能，满足现代学校的各种需求</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">📅</div>
+                        <h3>智能课表管理</h3>
+                        <p>完整的桌面应用课表管理功能，支持多班级、多学期管理，智能调度和冲突检测。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🎨</div>
+                        <h3>主题系统</h3>
+                        <p>基于XAML的灵活主题系统，支持自定义主题样式，打造个性化的用户界面体验。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🔗</div>
+                        <h3>插件架构</h3>
+                        <p>完整的插件SDK架构，支持第三方插件扩展，提供丰富的功能扩展能力。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🔄</div>
+                        <h3>IPC通信</h3>
+                        <p>高效的进程间通信机制，支持多组件间数据交换和协同工作。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🖥️</div>
+                        <h3>桌面集成</h3>
+                        <p>深度集成Windows桌面环境，提供原生桌面应用体验和系统功能。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🔊</div>
+                        <h3>语音合成</h3>
+                        <p>内置TTS语音合成功能，支持多种语音选项和自定义语音服务。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🌤️</div>
+                        <h3>天气服务</h3>
+                        <p>集成天气信息获取和显示，支持多种天气数据和图标系统。</p>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🔔</div>
+                        <h3>通知系统</h3>
+                        <p>完整的通知管理机制，支持多种提醒方式和事件通知。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Changelog Section -->
+        <section id="changelog" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">更新日志</h2>
+                <p class="section-subtitle reveal">了解ClassNature的最新功能和改进</p>
+                
+                <div class="changelog-container">
+                    <div class="version-card reveal">
+                        <div class="version-header">
+                            <h3 class="version-title">Version 2.4.8.219</h3>
+                            <div class="version-date">开发中版本</div>
+                        </div>
+                        <div class="version-content">
+                            <div class="version-note">
+                                <strong>当前开发版本：</strong>基于真实项目代码的最新开发版本，包含所有核心功能实现。
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🚀 核心功能</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">插件架构</div>
+                                            <div class="changelog-description">完整的插件SDK架构，支持第三方插件开发和扩展</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">主题系统</div>
+                                            <div class="changelog-description">基于XAML的主题系统，支持自定义主题样式和颜色</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">IPC通信</div>
+                                            <div class="changelog-description">高效的进程间通信机制，支持多组件协同工作</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">语音合成</div>
+                                            <div class="changelog-description">内置TTS语音合成功能，支持自定义语音服务</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🔧 技术架构</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">.NET 9.0</div>
+                                            <div class="changelog-description">基于最新.NET 9.0框架构建，提供现代化开发体验</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">WinUI 3</div>
+                                            <div class="changelog-description">使用Windows 10/11原生UI框架，确保最佳用户体验</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">模块化设计</div>
+                                            <div class="changelog-description">采用模块化架构，组件化开发，易于维护和扩展</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="version-card reveal">
+                        <div class="version-header">
+                            <h3 class="version-title">Version 2.4.0.0</h3>
+                            <div class="version-date">稳定版本</div>
+                        </div>
+                        <div class="version-content">
+                            <div class="version-note">
+                                <strong>核心版本：</strong>基于实际源码的核心版本，实现所有主要功能模块。
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🏗️ 项目架构</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">Core模块</div>
+                                            <div class="changelog-description">核心引擎模块，包含TaiyiEngine配置和资源管理系统</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">UI框架</div>
+                                            <div class="changelog-description">基于WinUI 3的现代化桌面应用界面</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">服务架构</div>
+                                            <div class="changelog-description">ControlCenterService服务架构，支持远程控制功能</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">配置管理</div>
+                                            <div class="changelog-description">完整的应用配置管理和持久化系统</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🎯 核心特性</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">主题系统</div>
+                                            <div class="changelog-description">基于XAML的主题系统，支持动态主题切换</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">插件架构</div>
+                                            <div class="changelog-description">完整的插件系统，支持第三方扩展开发</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">数据处理</div>
+                                            <div class="changelog-description">高效的数据处理引擎，支持多种数据格式</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🔧 技术实现</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">.NET 9</div>
+                                            <div class="changelog-description">使用最新的.NET 9.0框架，性能和稳定性显著提升</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">Windows API</div>
+                                            <div class="changelog-description">深度集成Windows 10/11系统功能</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="version-card reveal">
+                        <div class="version-header">
+                            <h3 class="version-title">Version 2.2.0.0</h3>
+                            <div class="version-date">早期版本</div>
+                        </div>
+                        <div class="version-content">
+                            <div class="version-note">
+                                <strong>历史版本：</strong>项目的早期开发版本，为后续版本奠定了基础。
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🏗️ 基础架构</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">项目初始化</div>
+                                            <div class="changelog-description">建立项目基本架构，定义核心模块和接口</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">基础框架</div>
+                                            <div class="changelog-description">构建应用基础框架，包括启动流程和生命周期管理</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">模块化设计</div>
+                                            <div class="changelog-description">实现模块化架构，便于功能扩展和维护</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🔧 核心功能</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">配置系统</div>
+                                            <div class="changelog-description">建立基础配置管理系统，支持持久化存储</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">主题基础</div>
+                                            <div class="changelog-description">构建主题系统基础架构，支持主题切换</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">插件框架</div>
+                                            <div class="changelog-description">初步实现插件框架，为后续扩展提供基础</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="version-card reveal">
+                        <div class="version-header">
+                            <h3 class="version-title">Version 2.3.0.0</h3>
+                            <div class="version-date">2024年9月发布</div>
+                        </div>
+                        <div class="version-content">
+                            <div class="version-note">
+                                <strong>重要里程碑：</strong>这个版本标志着项目的重要转型，包含开源协议更换和重大功能升级。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="version-card reveal">
+                        <div class="version-header">
+                            <h3 class="version-title">Version 2.3.1.0</h3>
+                            <div class="version-date">2024年10月</div>
+                        </div>
+                        <div class="version-content">
+                            <div class="version-note">
+                                <strong>后续更新：</strong>基于9月版本的改进和优化，提升系统稳定性和用户体验。
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🚀 功能改进</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">性能优化</div>
+                                            <div class="changelog-description">针对核心模块进行性能优化，提升应用响应速度</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item improved">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">界面优化</div>
+                                            <div class="changelog-description">优化用户界面交互体验，提升易用性</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                            
+                            <div class="changelog-section">
+                                <h4>📋 重要变更</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item changed">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">开源协议</div>
+                                            <div class="changelog-description">项目开源协议更换为GPLv3，促进开源社区发展</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🚀 新功能</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">自动化功能</div>
+                                            <div class="changelog-description">引入强大的自动化引擎，支持复杂的工作流</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">容器组件</div>
+                                            <div class="changelog-description">新增容器和多行组件，提供更灵活的布局选项</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">调课面板</div>
+                                            <div class="changelog-description">全新的调课面板，让课程调整变得简单直观</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item new">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">本地集控</div>
+                                            <div class="changelog-description">支持本地集中控制管理，提高管理效率</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="changelog-section">
+                                <h4>🐛 Bug修复</h4>
+                                <ul class="changelog-list">
+                                    <li class="changelog-item fixed">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">档案编辑器</div>
+                                            <div class="changelog-description">修复档案编辑器稳定性问题</div>
+                                        </div>
+                                    </li>
+                                    <li class="changelog-item fixed">
+                                        <div class="changelog-item-content">
+                                            <div class="changelog-category">组件显示</div>
+                                            <div class="changelog-description">解决组件在某些情况下无法正常显示的问题</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Startup Loading Screen -->
+        <div id="startup-loader" class="startup-loader">
+            <div class="loader-content">
+                <div class="logo-loader">
+                    <div class="loader-icon">📅</div>
+                    <div class="loader-icon-pulse"></div>
+                </div>
+                <h2 class="loader-title">ClassNature</h2>
+                <div class="loader-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-text" id="progress-text">正在加载...</div>
+                </div>
+                <div class="loader-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="version-count">5</span>
+                        <span class="stat-label">版本</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="feature-count">50+</span>
+                        <span class="stat-label">功能</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="code-lines">100K+</span>
+                        <span class="stat-label">代码行</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download Section -->
+        <section id="download" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">立即下载</h2>
+                <p class="section-subtitle reveal">选择适合您的版本开始使用ClassNature</p>
+                
+                <div class="download-grid">
+                    <div class="download-card reveal">
+                        <div class="download-icon">💻</div>
+                        <h3>Windows 版本</h3>
+                        <p>适用于Windows 10/11的最新版本，支持WinUI 3框架</p>
+                        <a href="#" class="btn btn-primary btn-download">下载 Windows 版</a>
+                    </div>
+                    
+                    <div class="download-card reveal">
+                        <div class="download-icon">📱</div>
+                        <h3>便携版本</h3>
+                        <p>无需安装的便携版本，可直接运行，方便测试和体验</p>
+                        <a href="#" class="btn btn-primary btn-download">下载 便携版</a>
+                    </div>
+                    
+                    <div class="download-card reveal">
+                        <div class="download-icon">🔧</div>
+                        <h3>开发者版本</h3>
+                        <p>包含完整源代码和开发文档，适合开发者和技术爱好者</p>
+                        <a href="https://github.com/ClassNature" class="btn btn-outline" target="_blank">访问 GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4 reveal">
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        <strong>系统要求：</strong>Windows 10 版本 1903 或更高版本，.NET 9 Runtime
+                    </p>
+                    <a href="https://github.com/ClassNature/releases" class="btn btn-outline" target="_blank">
+                        查看所有版本
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">联系我们</h2>
+                <p class="section-subtitle reveal">有任何问题或建议？我们很乐意听到您的声音</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">💬</div>
+                        <h3>社区支持</h3>
+                        <p>加入我们的GitHub社区，与其他用户交流经验，获取技术支持</p>
+                        <a href="https://github.com/ClassNature/discussions" class="btn btn-outline" target="_blank">访问社区</a>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">📧</div>
+                        <h3>Bug报告</h3>
+                        <p>发现问题了？请通过GitHub Issues向我们报告，我们会及时处理</p>
+                        <a href="https://github.com/ClassNature/issues" class="btn btn-outline" target="_blank">报告Bug</a>
+                    </div>
+                    
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">💡</div>
+                        <h3>功能建议</h3>
+                        <p>有好的想法或功能建议？我们很乐意听取您的意见</p>
+                        <a href="https://github.com/ClassNature/discussions/categories/ideas" class="btn btn-outline" target="_blank">提出建议</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home" class="footer-link">首页</a>
+                <a href="#features" class="footer-link">功能特性</a>
+                <a href="#changelog" class="footer-link">更新日志</a>
+                <a href="#download" class="footer-link">下载</a>
+                <a href="https://github.com/ClassNature" class="footer-link" target="_blank">GitHub</a>
+                <a href="https://github.com/ClassNature/blob/main/LICENSE" class="footer-link" target="_blank">开源协议</a>
+            </div>
+            
+            <div class="footer-text">
+                <p>ClassNature - 第三代智能课表管理系统</p>
+                <p>基于WinUI 3和.NET 9构建，致力于为现代学校提供最优质的课表管理解决方案</p>
+            </div>
+            
+            <div class="footer-credits">
+                <p>&copy; 2024 ClassNature Development Team. All rights reserved. | Licensed under GPLv3</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
